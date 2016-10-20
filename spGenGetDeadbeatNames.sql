@@ -2,7 +2,7 @@
 USE BookKeeperPro
 GO
 
-ALTER PROCEDURE dbo.spGetDeadbeatNames
+CREATE PROCEDURE dbo.spGetDeadbeatNames
 AS
 SELECT br.Name,bo.Title
 FROM Book as bo INNER JOIN Book_Loans as L 

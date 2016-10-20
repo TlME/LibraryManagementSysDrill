@@ -3,7 +3,7 @@
 USE BookKeeperPro
 GO
 
-ALTER PROCEDURE dbo.spDueToday @DueDate date = NULL, @BranchName nvarchar(80) = NULL
+CREATE PROCEDURE dbo.spDueToday @DueDate date = NULL, @BranchName nvarchar(80) = NULL
 AS
 SELECT Lib.BranchName,bo.Title,br.Name,br.[Address], Lo.DueDate
 
